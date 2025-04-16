@@ -23,7 +23,7 @@ def send_alert(subject, message):
     
     smtp_server = "smtp.gmail.com"
     smtp_port = 587
-    app_password = os.getenv("GMAIL_APP_ID")
+    app_password = os.getenv("GMAIL_APP_PASSWORD")
 
     try:
         msg = MIMEMultipart()
