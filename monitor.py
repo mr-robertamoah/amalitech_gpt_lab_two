@@ -18,9 +18,9 @@ DISK_THRESHOLD = 50
 
 def send_alert(subject, message):
 
-    from_email = "robertamoah.dev@gmail.com"
-    to_email = "robert.amoah@amalitechtraining.org"
-    # Gmail SMTP setup
+    from_email = os.getenv("FROM_EMAIL")
+    to_email = os.getenv("TO_EMAIL")
+    
     smtp_server = "smtp.gmail.com"
     smtp_port = 587
     app_password = os.getenv("GMAIL_APP_ID")
